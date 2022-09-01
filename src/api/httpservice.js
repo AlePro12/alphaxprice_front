@@ -13,9 +13,9 @@ const AlphaApi_Fetch = (url, method, data, emp = false, authtoken = true) => {
   }
   return axios({
     method: method,
-    url: urlbase + url + "&Token=Camino",
+    url: urlbase + url + "&Token=AlphaXPrice_TokenApp",
     data: data,
     headers: Headers,
   });
-}; //AlphaXPrice_TokenApp
+};
 export default AlphaApi_Fetch;
