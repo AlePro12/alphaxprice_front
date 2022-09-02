@@ -10,12 +10,12 @@ function useProd() {
   const GetProd = (CodProd) => {
     return getProdApi.getProdByCodProd(CodProd).then((res) => {
       setProd(res.data);
-      alert(JSON.stringify(res.data));
+      //alert(JSON.stringify(res.data));
       setLoad(true);
       return res.data;
     });
   };
 
-  return { ProdData, Load, GetProd };
+  return { ProdData, Load, GetProd, setProd };
 }
 export default useProd;

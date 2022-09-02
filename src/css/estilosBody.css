@@ -1,41 +1,41 @@
 /*Fuentes*/
+
 @font-face {
     font-family: 'Gotika_Bold';
-    src: url('../fonts/typo_gotika_bold_demo-webfont.woff2') format('woff2'),
-        url('../fonts/typo_gotika_bold_demo-webfont.woff') format('woff');
+    src: url('../fonts/typo_gotika_bold_demo-webfont.woff2') format('woff2'), url('../fonts/typo_gotika_bold_demo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'Gotika_Light';
-    src: url('../fonts/typo_gotika_light_demo-webfont.woff2') format('woff2'),
-        url('../fonts/typo_gotika_light_demo-webfont.woff') format('woff');
+    src: url('../fonts/typo_gotika_light_demo-webfont.woff2') format('woff2'), url('../fonts/typo_gotika_light_demo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'Gotika_Regular';
-    src: url('../fonts/typo_gotika_regular_demo-webfont.woff2') format('woff2'),
-        url('../fonts/typo_gotika_regular_demo-webfont.woff') format('woff');
+    src: url('../fonts/typo_gotika_regular_demo-webfont.woff2') format('woff2'), url('../fonts/typo_gotika_regular_demo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'Gotika_SmallCaps';
-    src: url('../fonts/typo_gotika_small_caps_demo-webfont.woff2') format('woff2'),
-        url('../fonts/typo_gotika_small_caps_demo-webfont.woff') format('woff');
+    src: url('../fonts/typo_gotika_small_caps_demo-webfont.woff2') format('woff2'), url('../fonts/typo_gotika_small_caps_demo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
+@font-face {
+    font-family: 'LilitaOne';
+    src: local('LilitaOne'), url(../fonts/LilitaOne-Regular.ttf) format('truetype');
+}
+
+
 /*Color y Background*/
+
 :root {
     --ImgFondo: url(../images/background.jpg);
     --color: rgba(219, 233, 246, 0.84);
@@ -54,6 +54,21 @@
     padding: 1em 0 0 0;
 }
 
+.costoDolar {
+    font-family: 'LilitaOne';
+    font-size: 26pt;
+}
+
+.costoBolivar {
+    font-family: 'LilitaOne';
+    font-size: 18pt;
+}
+
+.tasa {
+    font-family: 'LilitaOne';
+    font-size: 18pt;
+}
+
 .infoText {
     font-family: 'Gotika_Bold' !important;
     font-size: 1.4rem;
@@ -66,7 +81,6 @@
     height: 70px;
     transform: rotate(16deg);
 }
-
 
 .infoImgCBarra {
     width: 154px;
@@ -82,8 +96,10 @@
     padding: .3rem .3rem 0 0;
 }
 
+
 /*consulta*/
-.consultaContent{
+
+.consultaContent {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,56 +112,85 @@
     border-radius: 1.4rem;
     color: whitesmoke;
     font-family: 'Gotika_Bold';
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 800;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.674);
     padding: 1.5rem 1rem .5rem 1rem;
 }
-.tarjeta{
+
+.tarjeta {
     margin: 2rem 1rem 1rem 0;
     background: rgba(255, 255, 255, 0.815);
-    max-width: 260px;
+    max-width: 300px;
     height: 140px;
     padding: .2em .3em .2em .7em;
     border-radius: .8rem;
     font-family: 'Gotika_Bold';
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.516);
 }
-.tarjeta-2{
+
+.containerTarjetas {
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation: fadeIn 1s;
+    opacity: 1;
+}
+
+.tarjeta-2 {
     background: var(--colorPrincipal);
     color: white;
 }
-.tarjetaText{
+
+.tarjetaText {
     font-family: 'Gotika_Regular';
     font-size: 1.2rem;
     margin: .6rem 0 0 .1rem;
 }
-.imgUnitario{
+
+.imgUnitario {
     width: 40px;
     height: 40px;
     margin: 1rem 3rem 0 0
 }
-.imgMayor{
+
+.imgMayor {
     width: 60px;
     height: 70px;
     margin: .2rem 3rem 0 1rem;
 }
-.costoContent{
+
+.costoContent {
     text-align: end;
     padding: 0 1rem 0 0;
     font-family: 'Gotika_Bold';
     font-size: 1.1rem;
 }
 
+
 /*Logo de la empresa*/
-.logoEmpresa{
+
+.logoEmpresa {
     width: 160px;
-    height: 160px;
+    height: 100px;
+    padding: .3rem .6rem 0 0;
 }
-.inputContainer{
+
+.inputContainer {
     width: 204px;
 }
-.tasaContent{
+
+.tasaContent {
     width: 220px;
     height: 90px;
     text-align: center;
@@ -156,11 +201,8 @@
     border-radius: 1rem;
     font-family: 'Gotika_Regular';
 }
-.tasaTitulo{
+
+.tasaTitulo {
     padding-top: 1rem;
     line-height: 0;
-}
-.tasa{
-    font-family: 'Gotika_Bold';
-    font-size: 1.2rem;
 }
