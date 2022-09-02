@@ -105,7 +105,7 @@ function App() {
         <div className="col-12 consulta d-flex justify-content-center mt-2">
           <div className="col-6 consultaContent">
             <p className="consultaText">
-              {ShowProd ? ProdData.Descrip : "Consulte Precios Aqui!"}
+              {ShowProd ? ProdData.Descrip : "Consulte Precios Aquí!"}
             </p>
           </div>
         </div>
@@ -166,7 +166,7 @@ function App() {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Ingrese Codigo"
+                placeholder="Ingrese Código"
                 aria-label="Recipient's username"
                 aria-describedby="button-addon2"
                 id="barcode"
@@ -211,18 +211,18 @@ function App() {
           </div>
           <div className="tasaContainer d-flex justify-content-end mt-2 col-12">
             <div className="tasaContent">
-              <div className="col-6">
+              <div className="col-12 ms-2 mt-1 d-flex">
                 <BCV
                   style={{
-                    width: "80px",
+                    width: "20px",
                   }}
                 />
-              </div>
-              <div className="costoContent d-flex flex-column justify-content-end col-6">
+              <div className="d-flex flex-column justify-content-end col-9">
                 <p className="tasaTitulo">Cambio del Dia</p>
                 <p className="tasa">
                   $<span className="tasaDolar">{Divisa.Factor}</span>
                 </p>
+              </div>
               </div>
             </div>
           </div>
