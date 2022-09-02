@@ -1,0 +1,166 @@
+/*Fuentes*/
+@font-face {
+    font-family: 'Gotika_Bold';
+    src: url('../fonts/typo_gotika_bold_demo-webfont.woff2') format('woff2'),
+        url('../fonts/typo_gotika_bold_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Gotika_Light';
+    src: url('../fonts/typo_gotika_light_demo-webfont.woff2') format('woff2'),
+        url('../fonts/typo_gotika_light_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Gotika_Regular';
+    src: url('../fonts/typo_gotika_regular_demo-webfont.woff2') format('woff2'),
+        url('../fonts/typo_gotika_regular_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Gotika_SmallCaps';
+    src: url('../fonts/typo_gotika_small_caps_demo-webfont.woff2') format('woff2'),
+        url('../fonts/typo_gotika_small_caps_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Color y Background*/
+:root {
+    --ImgFondo: url(../images/background.jpg);
+    --color: rgba(219, 233, 246, 0.84);
+    --Fondo: linear-gradient(to bottom, var(--color), var(--color)), var(--ImgFondo) bottom;
+    --colorPrincipal: #FF9C00;
+}
+
+.Body {
+    background: var(--Fondo);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.infoTextContent {
+    padding: 1em 0 0 0;
+}
+
+.infoText {
+    font-family: 'Gotika_Bold' !important;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #585858;
+}
+
+.infoImgFlecha {
+    width: 70px;
+    height: 70px;
+    transform: rotate(16deg);
+}
+
+
+.infoImgCBarra {
+    width: 154px;
+    height: 90px;
+    background: white;
+    padding: .7rem .1rem .7rem .7rem;
+    border-radius: 0.5rem;
+}
+
+.imgLogoApp {
+    width: 158px;
+    height: 102px;
+    padding: .3rem .3rem 0 0;
+}
+
+/*consulta*/
+.consultaContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: var(--colorPrincipal);
+    min-width: 250px;
+    max-width: 520px;
+    min-height: 70px;
+    max-height: 75px;
+    border-radius: 1.4rem;
+    color: whitesmoke;
+    font-family: 'Gotika_Bold';
+    font-size: 1.2rem;
+    font-weight: 800;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.674);
+    padding: 1.5rem 1rem .5rem 1rem;
+}
+.tarjeta{
+    margin: 2rem 1rem 1rem 0;
+    background: rgba(255, 255, 255, 0.815);
+    max-width: 260px;
+    height: 140px;
+    padding: .2em .3em .2em .7em;
+    border-radius: .8rem;
+    font-family: 'Gotika_Bold';
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.516);
+}
+.tarjeta-2{
+    background: var(--colorPrincipal);
+    color: white;
+}
+.tarjetaText{
+    font-family: 'Gotika_Regular';
+    font-size: 1.2rem;
+    margin: .6rem 0 0 .1rem;
+}
+.imgUnitario{
+    width: 40px;
+    height: 40px;
+    margin: 1rem 3rem 0 0
+}
+.imgMayor{
+    width: 60px;
+    height: 70px;
+    margin: .2rem 3rem 0 1rem;
+}
+.costoContent{
+    text-align: end;
+    padding: 0 1rem 0 0;
+    font-family: 'Gotika_Bold';
+    font-size: 1.1rem;
+}
+
+/*Logo de la empresa*/
+.logoEmpresa{
+    width: 160px;
+    height: 160px;
+}
+.inputContainer{
+    width: 204px;
+}
+.tasaContent{
+    width: 220px;
+    height: 90px;
+    text-align: center;
+    color: white;
+    padding: .5rem;
+    box-sizing: border-box;
+    background: var(--colorPrincipal);
+    border-radius: 1rem;
+    font-family: 'Gotika_Regular';
+}
+.tasaTitulo{
+    padding-top: 1rem;
+    line-height: 0;
+}
+.tasa{
+    font-family: 'Gotika_Bold';
+    font-size: 1.2rem;
+}
