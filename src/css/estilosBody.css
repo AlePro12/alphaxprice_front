@@ -191,7 +191,7 @@
 }
 
 .tasaContent {
-    width: 220px;
+    width: 260px;
     height: 90px;
     text-align: center;
     color: white;
@@ -205,4 +205,5 @@
 .tasaTitulo {
     padding-top: 1rem;
     line-height: 0;
+    font-size: 1rem;
 }
