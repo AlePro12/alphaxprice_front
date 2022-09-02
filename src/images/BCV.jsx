@@ -4,14 +4,14 @@ function BCV() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="100"
-      height="100"
+      width="60"
+      height="60"
       preserveAspectRatio="xMidYMid meet"
       version="1"
       viewBox="0 0 80 80"
     >
       <g
-        fill="#000"
+        fill="#fff"
         stroke="none"
         transform="matrix(.0087 0 0 -.00891 -1.33 81.823)"
       >
